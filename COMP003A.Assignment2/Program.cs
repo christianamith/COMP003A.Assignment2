@@ -11,13 +11,17 @@ namespace COMP003A.Assignment2
     {
         static void Main(string[] args)
         {
-            // CONSOLE SECTION
+            // Console Section
+            Console.WriteLine("****************************************\nConsole Section \n****************************************\n\n");
+
             Console.Title = "COMP-003A - Assignment 2";
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.ForegroundColor = ConsoleColor.White;
 
 
-            // STRING SECTION
+            // String Section
+            Console.WriteLine("****************************************\nString Section \n****************************************");
+
             Console.Write("Enter First Name: ");
             string firstName = Console.ReadLine();
             Console.Write("Enter Middle Name: ");
@@ -29,10 +33,12 @@ namespace COMP003A.Assignment2
 
             int yearBorn = 2023 - Convert.ToInt32(inputAge); // Converts string literal to integer and subtracts it from current year
 
-            Console.WriteLine($"Hello, {firstName} {middleName} {lastName}. You were born in {yearBorn}.");
+            Console.WriteLine($"Hello, {firstName} {middleName} {lastName}. You were born in {yearBorn}.\n\n"); 
 
 
-            // MATH SECTION
+            // Math Section
+            Console.WriteLine("****************************************\nMath Section \n****************************************");
+
             Console.Write("Enter an integer for integer1: ");
             string integer1Text = Console.ReadLine();
             int integer1 = Convert.ToInt32(integer1Text);
@@ -45,9 +51,12 @@ namespace COMP003A.Assignment2
             Console.WriteLine($"{integer1} * {integer2} = {integer1 * integer2}");
             Console.WriteLine($"{integer1} / {integer2} = {integer1 / integer2}");
             Console.WriteLine($"{integer1} % {integer2} = {integer1 % integer2}");
+            Console.WriteLine("\n");
 
 
-            // CIRCLE AREA & CIRCUMFERENCE CALCULATOR SECTION
+            // Circle Area & Circumference Calculator Section
+            Console.WriteLine("****************************************\nCircle Area & Circumference Calculator Section \n****************************************");
+
             Console.WriteLine("Enter Radius: ");
             double radius = Convert.ToDouble( Console.ReadLine() );
             double area = Math.PI * Math.Pow(radius, 2);
